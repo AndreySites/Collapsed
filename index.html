@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Collapse - browser-based game ">
+        <meta name="keywords" content="Collapse, Apocalipse, Game, Browser-based, Online">
+        <meta name="author" content="Undetected">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collapsed</title>
+        <link rel="icon" type="image/.ico" href="Icon.ico"/>
+
+        <!--Custom Styles-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color: black">
+
+        <!--press space to continue-->
+        <p id="space" class="space">Press SPACE/TAP to continue</p>
+
+        <!--"year" text paragraph-->
+        <p id="Year" class="Year">Year</p>
+
+        <!--show year at menu-->
+        <p id="yearInfo" class="yearInfo">yearInfo</p>
+        
+        <!--alert box (at start)--> 
+        <div class="alert">
+            <span id="closebtn" class="closebtn">&times;</span>
+            This site uses localStorage, which is similar with cookies. By closing this alert you agree with that.
+
+            <button id="delStorageBtn" class="delStorage" onclick="delStorage()">Delete existent files [loses game progress]</button>
+        </div>
+
+        <!--load javascript-->
+        <script src="main.js"></script>
+
+    </body>
+</html>
