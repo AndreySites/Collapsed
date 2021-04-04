@@ -1,0 +1,218 @@
+/*questions elements*/
+.questions{
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    top: 50%;
+    margin-left: 235px;
+    transform: translate(-50%, -50%);
+}
+.CharacterImg{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 53px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.text{
+    position: relative;
+    white-space: normal;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 15px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.OptionOne{
+    position: relative;
+    display: inline-block;
+    bottom: 10px;
+    right: 460px;
+    width: 250px;
+    background-color: #1a1a1a;
+    color: #00a9d3;
+    border: none;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.OptionOne:hover {
+    background-color: #131313;
+    color: #005e75;
+}
+.OptionTwo{
+    position: relative;
+    display: inline-block;
+    bottom: 10px;
+    right: 450px;
+    width: 250px;
+    background-color: #1a1a1a;
+    color: #00a9d3;
+    border: none;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.OptionTwo:hover {
+    background-color: #131313;
+    color: #005e75;
+}
+.Name{
+    position: absolute;
+    bottom: 70px;
+    left: 90px;
+    color: #b6b6b6;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/*rectangle*/
+.GameRect{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 7px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 550px;
+    height: 550px;
+    background-color: #242424;
+}
+.ValueBar{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -295px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    width: 550px;
+    height: 60px;
+    background-color: #1b1b1b;
+}
+.TimeBar{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    margin-top: 175px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    width: 550px;
+    height: 60px;
+    background-color: #1b1b1b;
+}
+/*question text*/
+.text{
+    position: relative;
+    width: 500px;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+@media (max-width: 600px){
+    .text{
+        width: 400px;
+        margin-left: 50px;
+    }
+}
+
+/* settingsWindow(sw) */
+.sw {
+    opacity: 1;
+    transition: opacity 0.6s;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: "Lucida Console", "Courier New", monospace;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* sw header&body */
+.sw-header {
+    padding: 2px 16px;
+    background-color: #00323f;
+}
+
+.sw-body {padding: 0px 0px;}
+  
+/* sw Content */
+.sw-content {
+    margin: auto;
+    background-color: #1a1a1a;
+    color: #00a9d3;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* localStorage delete button */
+.DeleteBtn {
+    margin-top: 10px;
+    background-color: #242424;
+    border: none;
+    color: #00a9d3;
+    padding: 9px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.DeleteBtn:hover {
+    background-color: #131313;
+    color: #005e75;
+}
+
+/* volume slider */
+.volumeSlider {
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    background: #242424;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+  
+.volumeSlider:hover {
+    opacity: 1;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #005e75;
+    cursor: pointer;
+}
+
+/*sw Animation*/
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
